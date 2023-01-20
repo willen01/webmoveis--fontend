@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { BiEnvelope, BiPhoneCall, BiUser, BiCart } from "react-icons/bi";
 import { FaBars } from "react-icons/fa";
 import Container from "../components/container";
+import { SearchBar } from "../components/search-bar";
 
 //Header da aplicação
 const Header = () => {
@@ -78,7 +79,7 @@ const Header = () => {
               <MenuLink href="#">Vantagens</MenuLink>
               <MenuLink href="#">Categorias</MenuLink>
             </div>
-            <div>searchbar</div>
+            <SearchBar onSearch={() => {}} />
           </div>
         </Container>
       </nav>
